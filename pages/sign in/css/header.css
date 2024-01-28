@@ -1,0 +1,91 @@
+nav {
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 0;
+}
+
+.header__nav_btns {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin: 0 2rem;
+}
+
+.header__nav_right,
+.header__nav_list,
+.header__nav_btns {
+    gap: 2rem;
+}
+
+.header__nav_burger {
+    display: none;
+}
+
+
+.header__nav_item {
+    padding: 5px 0;
+    border-bottom: 2px solid transparent;
+    transition: 0.4s;
+    position: relative;
+}
+
+.header__nav_item:hover {
+    color: orange;
+}
+
+.header__nav_item::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: black;
+    bottom: 0;
+    left: 0;
+    transition: 0.4s;
+}
+
+.header__nav_item:hover::after {
+    width: 100%;
+    background: orange;
+
+}
+
+.header__nav__log_in {
+    width: 52px;
+    height: 24px;
+    background-color: transparent;
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+
+.open__account {
+    width: 122px;
+    height: 24px;
+    background-color: transparent;
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+
+@media (max-width: 900px) {
+    /* .header__nav_btns {
+        display: flex;
+        align-items: center;
+    } */
+
+    .header__nav_burger {
+        display: block;
+    }
+
+    .header__nav_list {
+        display: none;
+    }
+}
+
+@media (max-width: 650px) {
+    .header__nav_btns button {
+        margin: 0 10px;
+        gap: none;
+    }
+}

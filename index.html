@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container row">
+                <div class="header__nav_left row">
+                    <a href="index.html">
+                        <img src="./images/logo.svg" alt="">
+                    </a>
+                </div>
+                <div class="header__nav_right row">
+                    <ul class="header__nav_list row ">
+                        <li class="header__nav_item">
+                            <a href="#">Service</a>
+                        </li>
+                        <li class="header__nav_item">
+                            <a href="#">About</a>
+                        </li>
+                        <li class="header__nav_item">
+                            <a href="#">Contacts</a>
+                        </li>
+                    </ul>
+                    <div class="header__nav_btns">
+                        <button class="header__nav__log_in">Log in</button>
+                        <button class="open__account">Open An Account</button>
+                        <button class="header__nav_burger">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="Form__section row">
+            <div class="container">
+                <fieldset >
+                    <form class="column">
+                        <div class="form__top">
+                            <img src="./images/logo.svg" alt="">
+                            <h1>Welcome to ByTrend!</h1>
+                            <div class="form__top_p">
+                                <p>Already have an account? </p>
+                                <a href="./pages/sign in/signin.html">Sign In</a>
+                            </div>
+                        </div>
+                        <div class="email column">
+                            <label for="email">Email</label>
+                            <input id="email" type="text" placeholder="Email addres" required>
+                        </div>
+                        <div class="password column">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" placeholder="************" required>
+                        </div>
+                        <button class="continue__btn">Continue <svg xmlns="http://www.w3.org/2000/svg" width="24" height="27" viewBox="0 0 24 27" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M15.1956 19.4248C15.5826 19.8565 16.2158 19.8627 16.6098 19.4388L21.7007 13.9618C21.8922 13.7558 22 13.4742 22 13.1802C22 12.8863 21.8922 12.6047 21.7007 12.3987L16.6098 6.9217C16.2158 6.49779 15.5826 6.50403 15.1956 6.93565C14.8087 7.36727 14.8144 8.06082 15.2084 8.48473L18.5547 12.0848L3 12.0848C2.44772 12.0848 2 12.5753 2 13.1802C2 13.7852 2.44772 14.2757 3 14.2757L18.5547 14.2757L15.2084 17.8758C14.8144 18.2997 14.8087 18.9932 15.1956 19.4248Z" fill="white"/></svg>
+                        </button>
+                    </form>
+                </fieldset>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
